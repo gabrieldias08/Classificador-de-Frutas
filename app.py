@@ -92,7 +92,7 @@ if imagens_usuario:
         
         with st.spinner("A analisar todas as frutas..."):
             
-            limite = 90  # threshold
+            limite = 75  # threshold
             
             for idx, imagem_usuario in enumerate(imagens_usuario):
                 st.markdown("---")
@@ -120,4 +120,5 @@ if imagens_usuario:
                 with st.expander("Ver detalhes das probabilidades"):
                     for i, class_name in enumerate(classes):
                         prob = preds[0][i] * 100
+
                         st.write(f"{class_name}: {prob:.2f}%")
