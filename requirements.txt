@@ -1,4 +1,9 @@
 streamlit
-tensorflow==2.16.1
-pillow
+tensorflow-cpu==2.16.1
 numpy
+Pillow
+opencv-python-headless
+pandas
+matplotlib
+seaborn
+scikit-learn
